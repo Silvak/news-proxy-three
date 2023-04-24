@@ -15,7 +15,7 @@ const URLS = {
 
 // proxy
 const corsProxy = createProxyMiddleware({
-  target: URLS.REUTERS,
+  target: URLS.CNN,
   changeOrigin: true,
   onProxyRes: function (proxyRes, req, res) {
     proxyRes.headers["access-control-allow-origin"] = "*";
